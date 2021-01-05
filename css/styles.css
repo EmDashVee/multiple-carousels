@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.object-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.object-fit-bottom {
+    object-position: 50% 80%;
+}
+
+.slider {
+    height: 100vh;
+    transition: opacity .6s ease;
+}
+
+.slider.loading {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Slick overrides */
+.slick-list,
+.slick-track,
+.slick-slide { height: 100%; }
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.slick-prev {
+    left: 1.5em;
+}
+
+.slick-next {
+    right: 1.5em;
+}
